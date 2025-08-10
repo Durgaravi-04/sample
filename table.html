@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        /*first  table*/
+        #StudentData{
+                border: 1px solid black;
+                margin: 20px;
+                padding: 2px;
+                border-spacing: 10px;
+                text-align: center;
+               
+        }
+        #StudentData th, #StudentData td{
+                border: 1px solid red;
+                margin: 20px;
+                padding: 2px;
+                background-color: rgb(169, 153, 183);
+        }
+        /*second */
+        #second{
+                border: 1px solid black;
+                margin-left: 90px;
+                padding: 5px;
+                border-spacing: px;
+                
+        }
+        #second th,#second td{
+                border: 1px solid purple;
+                margin: 20px;
+                padding: 4px;
+                background-color: rgb(169, 80, 114);
+        }
+    </style>
+</head>
+<body>
+    <table id="StudentData">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Department</th> 
+                <th>HTML</th>
+                <th>CSS</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Durga</td>
+                <td>21 </td>
+                <td >IIM </td>
+                <td colspan="2">90 </td>
+            </tr>
+        </tbody>
+   </table>
+   <table id="second">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Department</th> 
+            <th>HTML</th>
+            <th>CSS</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Durga</td>
+            <td>21 </td>
+            <td rowspan="2">IIM </td>
+           <td>90 </td>
+           <td>90 </td>
+        </tr>
+         <tr>
+            <td>Suha</td>
+            <td>21 </td>
+            <td>90 </td>
+            
+        </tr>
+    </tbody>
+</table>
+</body>
+</html>
+
+<!-- 
+1.to remove dot in list- Use list-style-type as none
+2.to remove underline in a tag- Use text decorator as none 
+3.rowspan- merge vertically. bcoz same col with diff row
+4.colspan- merge horzontally. bcoz same row with diff col
+ -->
